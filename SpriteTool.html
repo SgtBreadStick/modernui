@@ -1,0 +1,137 @@
+<head>
+<title>ModernUI Sprite Tool</title>
+<style>
+	.invisibleImage {
+	  background-image: url(ui_skin.png);
+	  height:512px; 
+	  width:512px;
+	}
+
+	.divWithImageAsBackground {
+	  background-image: url(ui_skin.png); 
+	  height:512px; 
+	  width: 512px;
+	}
+
+	body {
+	background-color: #008800;
+	}
+</style>
+</head>
+
+  <div class="divWithImageAsBackground">
+  <img class="invisibleImage" usemap="#ui">
+  <map name="ui">
+  <area shape="rect" coords="0,0,126,126" href="#" title="Primary Window - The Primary Window (Box) That Is Selected"> <!--Windows-->
+  <area shape="rect" coords="128,0,254,126" href="#" title="Secondary Window - The Secondary Window (Box) That Is Unselected">
+  
+  <area shape="rect" coords="480,0,510,30" href="#" title="Global Button - Normal"> <!--Buttons-->
+  <area shape="rect" coords="480,32,510,62" href="#" title="Global Button - Hover">
+  <area shape="rect" coords="480,64,510,94" href="#" title="Global Button - Disabled">
+  <area shape="rect" coords="480,96,510,126" href="#" title="Global Button - Click">
+  
+  <area shape="rect" coords="418,33,428,46" href="#" title="Slider - Normal (Vertical)"> <!--Sliders-->
+  <area shape="rect" coords="433,33,446,45" href="#" title="Slider - Normal (Horizontal)">
+  <area shape="rect" coords="418,49,428,62" href="#" title="Slider - Hover (Vertical)">
+  <area shape="rect" coords="433,49,446,61" href="#" title="Slider - Hover (Horizontal)">
+  <area shape="rect" coords="418,65,428,78" href="#" title="Slider - Click (Vertical)">
+  <area shape="rect" coords="433,65,446,77" href="#" title="Slider - Click (Horizontal)">
+  <area shape="rect" coords="418,81,428,94" href="#" title="Slider - Disabled (Vertical)">
+  <area shape="rect" coords="433,81,446,93" href="#" title="Slider - Disabled (Horizontal)">
+  
+  <area shape="rect" coords="448,32,462,46" href="#" title="Checkbox - Checked"> <!--Checkboxes-->
+  <area shape="rect" coords="464,32,478,46" href="#" title="Checkbox - Unchecked">
+  <area shape="rect" coords="448,48,462,62" href="#" title="Checkbox - Disabled (Checked)">
+  <area shape="rect" coords="464,48,478,62" href="#" title="Checkbox - Disabled (Unchecked)">
+  
+  <area shape="rect" coords="448,64,462,78" href="#" title="Radio - Checked"> <!--Radios-->
+  <area shape="rect" coords="464,64,478,78" href="#" title="Radio - Unchecked">
+  <area shape="rect" coords="448,80,462,94" href="#" title="Radio - Disabled (Checked)">
+  <area shape="rect" coords="464,80,478,94" href="#" title="Radio - Disabled (Unchecked)">
+  
+  <area shape="rect" coords="385,114,389,124" href="#" title="Up and Down Arrows - Normal"> <!--Up and down arrows-->
+  <area shape="rect" coords="393,114,397,124" href="#" title="Up and Down Arrows - Hover">
+  <area shape="rect" coords="401,115,405,125" href="#" title="Up and Down arrows - Click">
+  <area shape="rect" coords="409,114,413,124" href="#" title="Up and Down arrows - Disabled">
+  
+  <area shape="rect" coords="0,150,126,170" href="#" title="Text field - Normal"> <!--Text field-->
+  <area shape="rect" coords="0,172,126,191" href="#" title="Text field - Focused">
+  
+  <area shape="rect" coords="128,192,254,254" href="#" title="Drop-Down Menu Background"> <!--Menu Backgrounds-->
+  <area shape="rect" coords="130,258,252,284" href="#" title="Drop-Down Highlight - Hover">
+  <area shape="rect" coords="128,128,254, 190" href="#" title="PlayerView (TAB) Drop-Down Menu Background">
+  
+  <area shape="rect" coords="128,320,254,350" href="#" title="Hint Pop-Up Background"> <!--Tab Panels-->
+  <area shape="rect" coords="0,256,126,382" href="#" title="Settings / Login Background">
+  <area shape="rect" coords="0,384,62,406" href="#" title="Settings > Tab - Selected">
+  <area shape="rect" coords="128,384,190,414" href="#" title="Settings > Tab - Normal">
+  
+  <area shape="rect" coords="256,256,318,382" href="#" title="PlayerView (TAB) Background"> <!--PlayerView (TAB) Background-->
+  
+  <area shape="rect" coords="320,256,350,286" href="#" title="PlayerView (TAB) List | Secondary Background - Selected"> <!--PlayerView (TAB) List Colours-->
+  <area shape="rect" coords="352,256,382,286" href="#" title="PlayerView (TAB) List | Secondary Background">
+  <area shape="rect" coords="320,288,350,318" href="#" title="PlayerView (TAB) List | Primary Background - Selected">
+  <area shape="rect" coords="352,288,381,318" href="#" title="PlayerView (TAB) List | Primary Background">
+  <area shape="rect" coords="320,320,350,350" href="#" title="PlayerView (TAB) List | Background - Hovered">
+  
+  <area shape="rect" coords="0,448,30,478" href="#" title="Settings Border"> <!--Settings Border-->
+  
+  <area shape="rect" coords="32,452,60,468" href="#" title="Close Button - Normal"> <!--Close Buttons-->
+  <area shape="rect" coords="64,452,92,467" href="#" title="Close Button - Hover">
+  <area shape="rect" coords="96,452,124,467" href="#" title="Close Button - Click">
+  
+  <area shape="rect" coords="384,208,398,334" href="#" title="Vertical Scrollbar - Track"> <!--Vertical Scrollbars-->
+  <area shape="rect" coords="400,208,414,334" href="#" title="Vertical Scrollbar - Normal">
+  <area shape="rect" coords="416,208,430,334" href="#" title="Vertical Scrollbar - Hovered">
+  <area shape="rect" coords="432,208,446,334" href="#" title="Vertical Scrollbar - Click">
+  <area shape="rect" coords="448,208,462,334" href="#" title="Vertical Scrollbar - Disabled">
+  
+  <area shape="rect" coords="464,208,478,222" href="#" title="Left Arrow - Normal"> <!--Arrow Buttons-->
+  <area shape="rect" coords="464,224,478,238" href="#" title="Up Arrow - Normal">
+  <area shape="rect" coords="464,240,478,254" href="#" title="Right Arrow - Normal">
+  <area shape="rect" coords="464,256,478,270" href="#" title="Down Arrow - Normal">
+  <area shape="rect" coords="480,208,494,222" href="#" title="Left Arrow - Hover"> 
+  <area shape="rect" coords="480,224,494,238" href="#" title="Up Arrow - Hover">
+  <area shape="rect" coords="480,240,494,254" href="#" title="Right Arrow - Hover">
+  <area shape="rect" coords="480,256,494,270" href="#" title="Down Arrow - Hover">
+  <area shape="rect" coords="464,272,478,286" href="#" title="Left Arrow - Click">
+  <area shape="rect" coords="464,288,478,302" href="#" title="Up Arrow - Click">
+  <area shape="rect" coords="464,304,478,318" href="#" title="Right Arrow - Click">
+  <area shape="rect" coords="464,320,478,334" href="#" title="Down Arrow - Click">
+  <area shape="rect" coords="480,272,494,286" href="#" title="Left Arrow - Disabled">
+  <area shape="rect" coords="480,288,494,302" href="#" title="Up Arrow - Disabled">
+  <area shape="rect" coords="480,304,494,318" href="#" title="Right Arrow - Disabled">
+  <area shape="rect" coords="480,320,494,334" href="#" title="Down Arrow - Disabled">
+  
+  <area shape="rect" coords="500,278,506,281" href="#" title="Drop Down Arrow - Normal"> <!--Drop Down Arrows-->
+  <area shape="rect" coords="500,294,506,297" href="#" title="Drop Down Arrow - Hover">
+  <area shape="rect" coords="500,310,506,314" href="#" title="Drop Down Arrow - Click">
+  <area shape="rect" coords="500,326,506,329" href="#" title="Drop Down Arrow - Disabled">
+  
+  
+  <area shape="rect" coords="384,336,510,366" href="#" title="Drop Down - Normal"> <!--Drop Downs-->
+  <area shape="rect" coords="384,368,510,398" href="#" title="Drop Down - Hover">
+  <area shape="rect" coords="384,400,510,430" href="#" title="Drop Down - Selected">
+  <area shape="rect" coords="384,432,510,462" href="#" title="Drop Down - Disabled">
+  
+  <area shape="rect" coords="384,0,414,30" href="#" title="Mic Test - Background">
+  <area shape="rect" coords="416,0,446,30" href="#" title="Mic Test - Bar">
+  
+  <area shape="rect" coords="16,496,23,503" href="#" title="3 - Button and Drop-down Text Colour > Click"> <!--Colours Row 1-->
+  <area shape="rect" coords="24,496,31,503" href="#" title="4 - Offline Server Text Colour">
+  <area shape="rect" coords="32,496,39,503" href="#" title="5 - Settings > Navigation Button Text Colour > Selected - Click">
+  <area shape="rect" coords="48,496,55,503" href="#" title="7 - Settings > Navigation Button Text Colour > Unselected - Click">
+
+  <area shape="rect" coords="0,504,7,511" href="#" title="27 - Primary Window Title Text Colour"> <!--Colours Row 2-->
+  <area shape="rect" coords="8,504,15,511" href="#" title="28 - Secondary Window Title Text Colour">
+  <area shape="rect" coords="16,504,23,511" href="#" title="29 - Button and Drop-Down Text Colour - Normal">
+  <area shape="rect" coords="24,504,31,511" href="#" title="30 - Button and Drop-Down Text Colour - Hover">
+  <area shape="rect" coords="32,504,39,511" href="#" title="31 - Settings > Navigation Button Text Colour > Selected - Normal">
+  <area shape="rect" coords="40,504,47,511" href="#" title="32 - Settings > Navigation Button Text Colour > Selected - Hover">
+  <area shape="rect" coords="48,504,55,511" href="#" title="33 - Settings > Navigation Button Text Colour > Unselected - Normal">
+  <area shape="rect" coords="56,504,63,511" href="#" title="34 - Settings > Navigation Button Text Colour > Unselected - Hover">
+  <area shape="rect" coords="64,504,71,511" href="#" title="35 - Primary Text Colour (In Primary and Secondary Windows)">
+  <area shape="rect" coords="152,504,159,511" href="#" title="46 - Hint Pop-Up Text Colour">
+</map>
+  </div>
+Original tool created by Digital
